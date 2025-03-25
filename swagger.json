@@ -1,0 +1,9 @@
+{
+    "url": "https://<url>/swagger.yaml",
+    "urls": [
+        {
+            "url": "https://<url>/swagger.yaml",
+            "name": "API"
+        }
+    ]
+}

