@@ -1,8 +1,8 @@
 {
-    "url": "https://<url>/swagger.yaml",
+    "url": "https://raw.githubusercontent.com/0xcronos/Swagger-UI-DOM-XSS-PoC/refs/heads/main/swagger.yaml",
     "urls": [
         {
-            "url": "https://<url>/swagger.yaml",
+            "url": "https://raw.githubusercontent.com/0xcronos/Swagger-UI-DOM-XSS-PoC/refs/heads/main/swagger.yaml",
             "name": "API"
         }
     ]
